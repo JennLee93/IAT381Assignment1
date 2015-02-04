@@ -1,7 +1,49 @@
-<div class="container"> <div class="end" id="finalize"> <h2>Awesome! You customized your own hero</h2> <p class="lead"> <img src="images/MainPerson.8fd68011.png" class="img-responsive" alt="Responsive Image"> </p> </div> <div ng-repeat="head in heads"> <!-- for each object in your list in your controller you shouldn't have to change this template --> <div ng-if="head.on" class="{{head.display}}"> <img src="images/head/{{head.img}}" class="img-responsive" alt="Responsive Image"> </div> </div> <div ng-repeat="shirt in shirts"> <div ng-if="shirt.on" class="{{shirt.display}}"> <img src="images/shirt/{{shirt.img}}" class="img-responsive" alt="Responsive Image"> </div> <!-- end of one loop --> </div> <!-- end of ng-repeat --> <div ng-repeat="accessories in accessories"> <!-- for each object in your list in your controller you shouldn't have to change this template --> <div ng-if="accessories.on" class="{{accessories.display}}"> <img src="images/accessories/{{accessories.img}}" class="img-responsive" alt="Responsive Image"> </div> <!-- end of one loop --> </div> <!-- end of ng-repeat --> <script type="text/javascript">var button = document.getElementById('toggle'),
+<div class="container">
+  <div class="end" id="finalize">
+    <h2>Awesome! You customized your own hero</h2>
+      <p class="lead">
+        <img src="images/MainPerson.png" class="img-responsive" alt="Responsive Image">
+      </p>
+  </div>
+
+                <div ng-repeat="head in heads">
+
+<!-- for each object in your list in your controller you shouldn't have to change this template -->
+                
+          <div ng-if="head.on" class="{{head.display}}" >
+            <img src="images/head/{{head.img}}" class="img-responsive" alt="Responsive Image">
+          </div>
+
+        </div>
+          <div ng-repeat="shirt in shirts">
+
+          <div ng-if="shirt.on" class="{{shirt.display}}">
+            <img src="images/shirt/{{shirt.img}}" class="img-responsive" alt="Responsive Image">
+          </div>
+
+          <!-- end of one loop -->
+
+        </div> <!-- end of ng-repeat -->
+
+        <div ng-repeat="accessories in accessories">
+
+<!-- for each object in your list in your controller you shouldn't have to change this template -->
+                
+          <div ng-if="accessories.on" class="{{accessories.display}}">
+            <img src="images/accessories/{{accessories.img}}" class="img-responsive" alt="Responsive Image">
+          </div>
+
+          <!-- end of one loop -->
+
+        </div> <!-- end of ng-repeat -->
+
+  <script type="text/javascript">
+    var button = document.getElementById('toggle'),
         intro = document.getElementById('intro');
 
     button.onclick = function() {
       var isHidden = intro.style.display === 'none';
       intro.style.display = isHidden ? 'block' : 'none';
-    };</script> </div>
+    };
+  </script>
+</div>
