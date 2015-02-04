@@ -1,10 +1,32 @@
-<!doctype html> <html ng-app="myappApp"> <head> <meta charset="utf-8"> <title></title> <meta name="description" content=""> <meta name="viewport" content="user-scalable=yes,width=device-width,initial-scale=1,maximum-scale=1"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.cabc70f2.css"> <link rel="stylesheet" href="styles/main.f9307885.css">  <body> <!--[if lt IE 7]>
+<!doctype html>
+<html ng-app="myappApp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="text/javascript"></script>
+
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> <!-- 
+    <![endif]-->
+<!-- 
     <div class="welcome" id="intro">
       <h2>Character Customization</h2>
       <p class="lead">
-        <img src="images/head_icon-25.16a145f7.png" class="img-responsive" alt="Responsive Image"><br>
+        <img src="images/head_icon-25.png" class="img-responsive" alt="Responsive Image"><br>
       </p>
       <button id="toggle" class="btn btn-lg btn-start" ng-href="">Begin</button>
     </div>
@@ -18,17 +40,36 @@
         intro.style.display = isHidden ? 'block' : 'none';
       };
     </script>
- --> <!-- Add your site or application content here --> <div class="container"> <div class="tabs-x tabs-left tab-bordered" role="tablist"> <ul class="nav nav-tabs"> <li><a href="#/main" data-toggle="tab" role="tab" aria-controls="main"><h6>Main</h6></a></li> <li><a href="#/heads" data-toggle="tab" role="tab" aria-controls="heads"><h6>Heads</h6></a></li> <li><a href="#/shirts" data-toggle="tab" role="tab" aria-controls="shirts"><h6>Shirts</h6></a></li> <li><a href="#/pants" data-toggle="tab" role="tab" aria-controls="pants"><h6>Pants</h6></a></li> <li><a href="#/accessories" data-toggle="tab" role="tab" aria-controls="accessories"><h6>Accessories</h6></a></li> </ul> </div> <!--           //  $scope.hammer = function() {
+ -->
+    <!-- Add your site or application content here -->
+    <div class="container">
+
+      <div class="tabs-x tabs-left tab-bordered" role="tablist">
+        <ul class="nav nav-tabs"> 
+        <li><a href="#/main" data-toggle="tab" role="tab" aria-controls="main"><h6>Main</h6></a></li>        
+        <li><a href="#/heads"  data-toggle="tab" role="tab" aria-controls="heads"><h6>Heads</h6></a></li> 
+        <li><a href="#/shirts" data-toggle="tab" role="tab" aria-controls="shirts"><h6>Shirts</h6></a></li> 
+        <li><a href="#/pants" data-toggle="tab" role="tab" aria-controls="pants"><h6>Pants</h6></a></li> 
+        <li><a href="#/accessories" data-toggle="tab" role="tab" aria-controls="accessories"><h6>Accessories</h6></a></li> 
+      </ul> 
+      </div>
+
+<!--           //  $scope.hammer = function() {
 
        //    document.getElementById('thorHammer').innerHTML = (document.getElementById('thorHammer').style.display)=(document.getElementById('thorHammer').style.display==='none')?'block':'none';
 
-      // }; --> <div ng-view></div> <!--           <div role="tabpanel" class="tab-pane" id="heads"><h5>Choose your characters facial features</h5> 
+      // }; -->
+
+      <div ng-view></div>
+
+
+<!--           <div role="tabpanel" class="tab-pane" id="heads"><h5>Choose your characters facial features</h5> 
 
             <div class="col-xs-1">
               <div class="thumbnail"> 
 
                 <div class="thumbnail-hat" onclick="hat()">
-                  <img src="images/head/ThorHat.28b3238c.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/head/ThorHat.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -38,11 +79,11 @@
                 </script>
                 
                 <div class="display-hat" id='thorHat' style='display:none;'>
-                  <img src="images/head/ThorHat.28b3238c.png" class="img-responsive" alt>
+                  <img src="images/head/ThorHat.png" class="img-responsive" alt>
                 </div>  
 
                 <div class="thumbnail-blackwidowhair1" onclick="hair1()">
-                  <img src="images/head/BlackWidowHair1.ea9db00b.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/head/BlackWidowHair1.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -52,11 +93,11 @@
                 </script>
                 
                 <div class="display-blackwidowhair1" id='blackwidowHair1' style='display:none;'>
-                  <img src="images/head/BlackWidowHair1.ea9db00b.png" class="img-responsive" alt>
+                  <img src="images/head/BlackWidowHair1.png" class="img-responsive" alt>
                 </div>  
 
                 <div class="thumbnail-blackwidowhair2" onclick="hair2()">
-                  <img src="images/head/BlackWidowHair2.081f0a1f.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/head/BlackWidowHair2.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -66,11 +107,11 @@
                 </script>
                 
                 <div class="display-blackwidowhair2" id='blackwidowHair2' style='display:none;'>
-                  <img src="images/head/BlackWidowHair2.081f0a1f.png" class="img-responsive" alt>
+                  <img src="images/head/BlackWidowHair2.png" class="img-responsive" alt>
                 </div> 
 
                 <div class="thumbnail-captainMask" onclick="captainMask()">
-                  <img src="images/head/CpAmMask.99339529.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/head/CpAmMask.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -80,11 +121,11 @@
                 </script>
                 
                 <div class="display-captainMask" id='captainMask' style='display:none;'>
-                  <img src="images/head/CpAmMask.99339529.png" class="img-responsive" alt>
+                  <img src="images/head/CpAmMask.png" class="img-responsive" alt>
                 </div> 
 
                 <div class="thumbnail-eyePatch" onclick="eyePatch()">
-                  <img src="images/head/Eyepatch.e2a62c8d.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/head/Eyepatch.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -94,11 +135,11 @@
                 </script>
                 
                 <div class="display-eyePatch" id='eyePatch' style='display:none;'>
-                  <img src="images/head/Eyepatch.e2a62c8d.png" class="img-responsive" alt>
+                  <img src="images/head/Eyepatch.png" class="img-responsive" alt>
                 </div> 
 
                 <div class="thumbnail-ironmanHelmet" onclick="helmet()">
-                  <img src="images/head/IronManMask-07.f8873570.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/head/IronManMask-07.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -108,11 +149,11 @@
                 </script>
                 
                 <div class="display-ironmanHelmet" id='ironmanHelmet' style='display:none;'>
-                  <img src="images/head/IronManMask-07.f8873570.png" class="img-responsive" alt>
+                  <img src="images/head/IronManMask-07.png" class="img-responsive" alt>
                 </div> 
 
                 <div class="thumbnail-hulkHair" onclick="hulkHair()">
-                  <img src="images/head/hulkHair.f1a776d0.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/head/hulkHair.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -122,19 +163,21 @@
                 </script>
                 
                 <div class="display-hulkHair" id='hulkHair' style='display:none;'>
-                  <img src="images/head/hulkHair.f1a776d0.png" class="img-responsive" alt>
+                  <img src="images/head/hulkHair.png" class="img-responsive" alt>
                 </div> 
 
               </div>
             </div>
 
-            </div> --> <!-- <div role="tabpanel" class="tab-pane" id="shirts"><h5>Choose a shirt</h5>
+            </div> -->
+
+          <!-- <div role="tabpanel" class="tab-pane" id="shirts"><h5>Choose a shirt</h5>
 
             <div class="col-xs-1">
               <div class="thumbnail">
 
                 <div class="thumbnail-captainShirt" onclick="captainShirt()">
-                  <img src="images/shirt/cptAmShirt.aa994674.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/shirt/cptAmShirt.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -144,11 +187,11 @@
                 </script>
                 
                 <div class="display-captainShirt" id='captainShirt' style='display:none;'>
-                  <img src="images/shirt/cptAmShirt.aa994674.png" class="img-responsive" alt>
+                  <img src="images/shirt/cptAmShirt.png" class="img-responsive" alt>
                 </div>
 
                 <div class="thumbnail-hawkeyeShirt" onclick="hawkShirt()">
-                  <img src="images/shirt/HawkEyeShirt.9fbd3db6.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/shirt/HawkEyeShirt.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -158,11 +201,11 @@
                 </script>
                 
                 <div class="display-hawkeyeShirt" id='hawkeyeShirt' style='display:none;'>
-                  <img src="images/shirt/HawkEyeShirt.9fbd3db6.png" class="img-responsive" alt>
+                  <img src="images/shirt/HawkEyeShirt.png" class="img-responsive" alt>
                 </div>
 
                 <div class="thumbnail-hulkBody" onclick="hulkBody()">
-                  <img src="images/shirt/hulkBody.3aff03de.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/shirt/hulkBody.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -172,11 +215,11 @@
                 </script>
                 
                 <div class="display-hulkBody" id='hulkBody' style='display:none;'>
-                  <img src="images/shirt/hulkBody.3aff03de.png" class="img-responsive" alt>
+                  <img src="images/shirt/hulkBody.png" class="img-responsive" alt>
                 </div>
 
                 <div class="thumbnail-ironmanShirt" onclick="ironmanShirt()">
-                  <img src="images/shirt/ironmanShirt.a408a7a7.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/shirt/ironmanShirt.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -186,11 +229,11 @@
                 </script>
                 
                 <div class="display-ironmanShirt" id='ironmanShirt' style='display:none;'>
-                  <img src="images/shirt/ironmanShirt.a408a7a7.png" class="img-responsive" alt>
+                  <img src="images/shirt/ironmanShirt.png" class="img-responsive" alt>
                 </div>
 
                 <div class="thumbnail-thorShirt" onclick="thorShirt()">
-                  <img src="images/shirt/thorShirt.4c213a90.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/shirt/thorShirt.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -200,18 +243,20 @@
                 </script>
                 
                 <div class="display-thorShirt" id='thorShirt' style='display:none;'>
-                  <img src="images/shirt/thorShirt.4c213a90.png" class="img-responsive" alt>
+                  <img src="images/shirt/thorShirt.png" class="img-responsive" alt>
                 </div>
 
               </div> 
             </div>
        
-            </div> --> <!-- <div role="tabpanel" class="tab-pane" id="pants"><h5>Choose a pair of pants</h5>
+            </div> -->
+
+          <!-- <div role="tabpanel" class="tab-pane" id="pants"><h5>Choose a pair of pants</h5>
 
             <div class="col-xs-1">
               <div class="thumbnail"> 
                 <div class="thumbnail-pants1" onclick="pants1()">
-                  <img src="images/pants/pants1.01a6112f.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/pants/pants1.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -221,11 +266,11 @@
                 </script>
                 
                 <div class="display-pants1" id='pants1' style='display:none;'>
-                  <img src="images/pants/pants1.01a6112f.png" class="img-responsive" alt>
+                  <img src="images/pants/pants1.png" class="img-responsive" alt>
                 </div>
 
                 <div class="thumbnail-hulkPants" onclick="hulkPants()">
-                  <img src="images/pants/pants2.b9f594e0.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/pants/pants2.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -235,11 +280,11 @@
                 </script>
                 
                 <div class="display-hulkPants" id='hulkPants' style='display:none;'>
-                  <img src="images/pants/pants2.b9f594e0.png" class="img-responsive" alt>
+                  <img src="images/pants/pants2.png" class="img-responsive" alt>
                 </div>
 
                 <div class="thumbnail-captainPants" onclick="captainPants()">
-                  <img src="images/pants/pants3.01a133c8.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/pants/pants3.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -249,11 +294,11 @@
                 </script>
                 
                 <div class="display-captainPants" id='captainPants' style='display:none;'>
-                  <img src="images/pants/pants3.01a133c8.png" class="img-responsive" alt>
+                  <img src="images/pants/pants3.png" class="img-responsive" alt>
                 </div>
 
                 <div class="thumbnail-Pants4" onclick="Pants4()">
-                  <img src="images/pants/pants4.704bb256.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/pants/pants4.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -263,11 +308,11 @@
                 </script>
                 
                 <div class="display-Pants4" id='Pants4' style='display:none;'>
-                  <img src="images/pants/pants4.704bb256.png" class="img-responsive" alt>
+                  <img src="images/pants/pants4.png" class="img-responsive" alt>
                 </div>
 
                 <div class="thumbnail-Pants5" onclick="Pants5()">
-                  <img src="images/pants/pants5.b09c4393.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/pants/pants5.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -277,11 +322,11 @@
                 </script>
                 
                 <div class="display-Pants5" id='Pants5' style='display:none;'>
-                  <img src="images/pants/pants5.b09c4393.png" class="img-responsive" alt>
+                  <img src="images/pants/pants5.png" class="img-responsive" alt>
                 </div>
 
                 <div class="thumbnail-ironmanPants" onclick="ironmanPants()">
-                  <img src="images/pants/pants6.a74924c9.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/pants/pants6.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -291,19 +336,21 @@
                 </script>
                 
                 <div class="display-ironmanPants" id='ironmanPants' style='display:none;'>
-                  <img src="images/pants/pants6.a74924c9.png" class="img-responsive" alt>
+                  <img src="images/pants/pants6.png" class="img-responsive" alt>
                 </div>
 
               </div>
             </div>
           
-            </div> --> <!-- <div role="tabpanel" class="tab-pane" id="accessories"><h5>Add accessories</h5>
+            </div> -->
+
+          <!-- <div role="tabpanel" class="tab-pane" id="accessories"><h5>Add accessories</h5>
 
             <div class="col-xs-1">
               <div class="thumbnail">             
               <div ng-controller="AccessoriesCtrl">
                 <div class="thumbnail-hammer" onclick="hammer()">
-                  <img src="images/accessories/ThorHammer.37c1c875.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/accessories/ThorHammer.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -313,11 +360,11 @@
                 </script>
                 
                 <div class="display-hammer" id='thorHammer' style='display:none;'>
-                  <img src="images/accessories/ThorHammer.37c1c875.png" class="img-responsive" alt>
+                  <img src="images/accessories/ThorHammer.png" class="img-responsive" alt>
                 </div>
 
                 <div class="thumbnail-shield" onclick="shield()">
-                  <img src="images/accessories/CpAmShield_small-06.d01b7992.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/accessories/CpAmShield_small-06.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -327,11 +374,11 @@
                 </script>
                 
                 <div class="display-shield" id='shield' style='display:none;'>
-                  <img src="images/accessories/CpAmShield_small-06.d01b7992.png" class="img-responsive" alt>
+                  <img src="images/accessories/CpAmShield_small-06.png" class="img-responsive" alt>
                 </div>
 
                 <div class="thumbnail-arrow" onclick="arrow()">
-                  <img src="images/accessories/HawkEyeArrow-16.4e427d80.png" class="img-responsive" alt="Responsive Image">
+                  <img src="images/accessories/HawkEyeArrow-16.png" class="img-responsive" alt="Responsive Image">
                 </div>
 
                 <script>
@@ -341,17 +388,70 @@
                 </script>
                 
                 <div class="display-arrow" id='arrow' style='display:none;'>
-                  <img src="images/accessories/HawkEyeArrow-16.4e427d80.png" class="img-responsive" alt>
+                  <img src="images/accessories/HawkEyeArrow-16.png" class="img-responsive" alt>
                 </div>
 
               </div>
             </div>
-            </div> --> <!-- </div> --> <div class="character"> <img src="images/MainPerson.8fd68011.png" class="img-responsive" alt="Responsive Image"> </div> <a ng-href="#/end"><button id="toggle" class="btn btn-lg btn-submit">Done</button></a> <div class="footer"> <p><span class="glyphicon glyphicon-heart"></span> Created by Levona Yim and Jennifer Lee </p> </div> </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            </div> -->
+
+            <!-- </div> -->
+
+        <div class="character">
+          <img src="images/MainPerson.png" class="img-responsive" alt="Responsive Image">
+        </div>
+
+        <a ng-href="#/end"><button id="toggle" class="btn btn-lg btn-submit">Done</button></a>
+
+        <div class="footer">
+          <p><span class="glyphicon glyphicon-heart"></span> Created by Levona Yim and Jennifer Lee </p>
+        </div>
+
+        </div>
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
        ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');</script> <!--[if lt IE 9]>
-    <script src="scripts/oldieshim.76f279db.js"></script>
-    <![endif]--> <script src="scripts/vendor.0ef4a2cb.js"></script> <script src="scripts/scripts.959edd91.js"></script>  
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/button.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/heads.js"></script>
+        <script src="scripts/controllers/shirts.js"></script>
+        <script src="scripts/controllers/pants.js"></script>
+        <script src="scripts/controllers/accessories.js"></script>
+        <script src="scripts/controllers/end.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
